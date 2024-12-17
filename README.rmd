@@ -1,0 +1,12 @@
+This repo was created on the following system:
+
+```{r}
+Sys.info()
+```
+
+with default repository options:
+
+```{r}
+options("repos")
+```
+
