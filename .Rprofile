@@ -1,5 +1,5 @@
 source("renv/activate.R")
 if (Sys.info()["sysname"] == "Linux") {
-  options(repos = c(PPM = "https://packagemanager.posit.co/cran/latest"))
+  Sys.setenv("RENV_CONFIG_REPOS_OVERRIDE" = "https://packagemanager.posit.co/cran/__linux__/noble/latest")
   options(pkgType = "both")
 }
