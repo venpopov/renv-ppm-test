@@ -23,12 +23,14 @@ Sys.info()
                                                                                              effective_user 
                                                                                                    "vpopov" 
 
-with default repository options:
+with a custom .Rprofile:
 
-``` r
-options("repos")
+``` bash
+cat .Rprofile
 ```
 
-    $repos
-                             CRAN 
-    "https://cloud.r-project.org" 
+    if (Sys.info()["sysname"] == "Linux") {
+      options(repos = c(PPM = "https://packagemanager.posit.co/cran/latest"))
+      options(pkgType = "both")
+    }
+    source("renv/activate.R")

@@ -4,9 +4,8 @@ This repo was created on the following system:
 Sys.info()
 ```
 
-with default repository options:
+with a custom .Rprofile:
 
-```{r}
-options("repos")
+```{bash}
+cat .Rprofile
 ```
-
